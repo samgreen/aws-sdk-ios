@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.frameworks   = 'UIKit', 'Foundation', 'SystemConfiguration'
   s.libraries    = 'z', 'sqlite3'
   s.requires_arc = true
+  s.tvos.deployment_target = '9.0'
 
   s.source_files = 'AWSCore/*.{h,m}', 'AWSCore/**/*.{h,m}'
   s.private_header_files = 'AWSCore/XMLDictionary/**/*.h', 'AWSCore/XMLWriter/**/*.h', 'AWSCore/FMDB/AWSFMDatabase+Private.h', 'AWSCore/Fabric/*.h'
